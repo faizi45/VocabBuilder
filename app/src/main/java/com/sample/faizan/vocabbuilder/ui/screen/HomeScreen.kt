@@ -28,7 +28,7 @@ import com.sample.faizan.vocabbuilder.components.VocabInputText
 import com.sample.faizan.vocabbuilder.components.VocabOutlinedTextFieldWithIcon
 import com.sample.faizan.vocabbuilder.models.VocabData
 
-//This is home screen composable
+//This is home screen composable.
 @ExperimentalComposeUiApi
 @Composable
 fun HomeScreen(
