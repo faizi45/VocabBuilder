@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "304880630425",
+    "project_id": "vocabbuilder-3da9b",
+    "storage_bucket": "vocabbuilder-3da9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304880630425:android:f482a9ca308afe0afe5608",
+        "android_client_info": {
+          "package_name": "com.sample.faizan.vocabbuilder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304880630425-v0m2ug4496jgn8ifbiejiile0gmoktv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEV6si3EWb4ODEnihB6XfVZ3VOazS11c4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304880630425-v0m2ug4496jgn8ifbiejiile0gmoktv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
