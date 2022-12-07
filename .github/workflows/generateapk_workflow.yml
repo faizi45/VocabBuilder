@@ -25,7 +25,7 @@ jobs:
       - name: Upload APK to Github Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: app_debug
+          name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
 
@@ -39,7 +39,7 @@ jobs:
       - name: Download Stored Artifact
         uses: actions/download-artifact@v3
         with:
-          name: app_debug
+          name: app-debug
 
       - name: Upload APK
         uses: wzieba/Firebase-Distribution-Github-Action@v1
@@ -49,4 +49,4 @@ jobs:
           # Generate using Firebase CLI. Command to run `firebase login:ci`.
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: testers # Speciy a group you want the app to be distributed to
-          file: app_debug.apk
+          file: app-debug.apk
