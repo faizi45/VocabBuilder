@@ -4,8 +4,24 @@ on:
     branches: [ master ]
 
 jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: bash ./gradlew test --stacktrace
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: unit_test_report
+          path: app/build/reports/tests/testDebugUnitTest/
+
   build:
     name: Generate APK
+    needs: unit-test
     runs-on: ubuntu-latest
 
     steps:
