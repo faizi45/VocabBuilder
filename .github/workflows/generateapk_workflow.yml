@@ -45,7 +45,7 @@ jobs:
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           # Acquire from Firebase Console. Project Overview -> Project Settigns -> Under the App area you will see `App ID`
-          appId: ${{ secrets.FIREBASE_ANDROID_APP_ID }}
+          appId: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
           # Generate using Firebase CLI. Command to run `firebase login:ci`.
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: testers # Speciy a group you want the app to be distributed to
