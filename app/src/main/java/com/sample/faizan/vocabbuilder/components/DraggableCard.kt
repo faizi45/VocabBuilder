@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 import kotlin.math.abs
 
+//comment added
 enum class SwipeResult {
     ACCEPTED, REJECTED
 }
